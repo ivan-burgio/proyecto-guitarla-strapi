@@ -368,12 +368,15 @@ export interface ApiGuitarraGuitarra extends Schema.CollectionType {
     singularName: 'guitarra';
     pluralName: 'guitarras';
     displayName: 'Guitarras';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
     nombre: Attribute.String & Attribute.Required;
+    descripcion: Attribute.Blocks;
+    precio: Attribute.Integer;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
