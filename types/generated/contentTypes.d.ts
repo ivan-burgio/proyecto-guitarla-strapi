@@ -377,6 +377,8 @@ export interface ApiGuitarraGuitarra extends Schema.CollectionType {
     nombre: Attribute.String & Attribute.Required;
     descripcion: Attribute.Blocks;
     precio: Attribute.Integer;
+    imagen: Attribute.Media & Attribute.Required;
+    url: Attribute.UID<'api::guitarra.guitarra', 'nombre'>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
